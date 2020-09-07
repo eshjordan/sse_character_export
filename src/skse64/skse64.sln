@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common_vc14", "..\common\co
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyFirstPlugin", "jordans_plugin\MyFirstPlugin.vcxproj", "{4D608E7E-FD4F-4725-BEC0-3B25D5B79A9F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "skaar", "skaar_skse_plugin\skaar_skse_plugin.vcxproj", "{F0CF443B-B64A-489E-A826-6924FECB0F4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug_VC142|x64 = Debug_VC142|x64
@@ -121,6 +123,20 @@ Global
 		{4D608E7E-FD4F-4725-BEC0-3B25D5B79A9F}.Release|x64.ActiveCfg = Release|x64
 		{4D608E7E-FD4F-4725-BEC0-3B25D5B79A9F}.Release|x64.Build.0 = Release|x64
 		{4D608E7E-FD4F-4725-BEC0-3B25D5B79A9F}.Release|x86.ActiveCfg = Release|x64
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Debug_VC142|x64.ActiveCfg = Release|Win32
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Debug_VC142|x64.Build.0 = Release|Win32
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Debug_VC142|x86.ActiveCfg = Debug|Win32
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Debug_VC142|x86.Build.0 = Debug|Win32
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Debug|x64.ActiveCfg = Debug|Win32
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Debug|x86.ActiveCfg = Debug|Win32
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Debug|x86.Build.0 = Debug|Win32
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Release_VC142|x64.ActiveCfg = Release|Win32
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Release_VC142|x64.Build.0 = Release|Win32
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Release_VC142|x86.ActiveCfg = Release|Win32
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Release_VC142|x86.Build.0 = Release|Win32
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Release|x64.ActiveCfg = Release|Win32
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Release|x86.ActiveCfg = Release|Win32
+		{F0CF443B-B64A-489E-A826-6924FECB0F4E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
