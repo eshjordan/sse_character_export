@@ -6,6 +6,11 @@
 
 #include "version.h"  // VERSION_VERSTRING, VERSION_MAJOR
 
+#include "SavePlayerData.hpp"
+#include "SavePlayerDataPlugin.h"
+
+static PluginHandle					g_pluginHandle = kPluginHandle_Invalid;
+static SKSEPapyrusInterface* g_papyrus = NULL;
 
 extern "C" {
 	bool SKSEPlugin_Query(const SKSEInterface* a_skse, PluginInfo* a_info)
@@ -15,6 +20,8 @@ extern "C" {
 		gLog.SetLogLevel(IDebugLog::kLevel_DebugMessage);
 
 		_MESSAGE("MyFirstPlugin v%s", MYFP_VERSION_VERSTRING);
+
+		g_pluginHandle = a_skse->GetPluginHandle();
 
 		a_info->infoVersion = PluginInfo::kInfoVersion;
 		a_info->name = "MyFirstPlugin";
@@ -35,6 +42,10 @@ extern "C" {
 	bool SKSEPlugin_Load(const SKSEInterface* a_skse)
 	{
 		_MESSAGE("[MESSAGE] MyFirstPlugin loaded");
+
+		g_papyrus = (SKSEPapyrusInterface*)a_skse->QueryInterface(kInterface_Papyrus);
+
+		SavePlayerDataPlugin::spd_instance = new SavePlayerData();
 
 		return true;
 	}
