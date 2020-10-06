@@ -152,7 +152,17 @@ namespace boost::serialization {
 	template<class Archive>
 	void serialize(Archive& ar, ActorValueOwner avo, const unsigned int version)
 	{
-		ar& avo;
+		
+	}
+
+	template<class Archive>
+	void serialize(Archive& ar, PlayerSkills ps, const unsigned int version)
+	{
+		ar& ps.data;
+		//ar& ps.GetSkillData_Address;
+		//ar& ps.IncrementLegendary_Address;
+		ar& ps.kAdvanceableSkillOffset;
+		ar& ps.kNumAdvanceableSkills;
 	}
 	
 	
